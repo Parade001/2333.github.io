@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaScript学习笔记（第六天）, null">
-    <meta name="description" content="JavaScript学习笔记（第六天） | null">
+    <meta name="keywords" content="JavaScript学习笔记（第四天）, null">
+    <meta name="description" content="JavaScript数据类型检测typeof   或  typeof()123456789101112console.log(typeof 10);   //numberconsole.log(typeof(10));  //numberc">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaScript学习笔记（第六天） | null</title>
+    <title>JavaScript学习笔记（第四天） | null</title>
     <link rel="icon" type="image/png" href="/Parade001.github.io/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/Parade001.github.io/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Parade001.github.io/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Parade001.github.io/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaScript学习笔记（第六天）</h1>
+                    <h1 class="description center-align post-title">JavaScript学习笔记（第四天）</h1>
                 </div>
             </div>
         </div>
@@ -443,7 +443,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-10-18
+                    2021-10-14
                 </div>
                 
 
@@ -452,7 +452,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    563
                 </div>
                 
 
@@ -469,7 +469,31 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h1 id="JavaScript数据类型检测"><a href="#JavaScript数据类型检测" class="headerlink" title="JavaScript数据类型检测"></a>JavaScript数据类型检测</h1><h3 id="typeof-或-typeof"><a href="#typeof-或-typeof" class="headerlink" title="typeof   或  typeof()"></a>typeof   或  typeof()</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">console.log(typeof 10);   //number</span><br><span class="line">console.log(typeof(10));  //number</span><br><span class="line"></span><br><span class="line">console.log(typeof &#x27;abc&#x27;); //string</span><br><span class="line">console.log(typeof(abc));  //string</span><br><span class="line"></span><br><span class="line">console.log(typeof true);  //boolean</span><br><span class="line">console.log(typeof(false));//boolean</span><br><span class="line"></span><br><span class="line">console.log(typeof undefined)  //undefined</span><br><span class="line"></span><br><span class="line">console.log(typeof null)  //object</span><br></pre></td></tr></table></figure>
+
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var num = 10</span><br><span class="line">var name = &#x27;leeo&#x27;</span><br><span class="line">var a = false</span><br><span class="line">var b</span><br><span class="line">console.log(typeof num)</span><br><span class="line">console.log(typeof name)</span><br><span class="line">console.log(typeof a)</span><br><span class="line">console.log(typeof b)</span><br><span class="line">// isNaN ture 为数字 flase 非数字</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="遍历数组返回最大值"><a href="#遍历数组返回最大值" class="headerlink" title="遍历数组返回最大值"></a>遍历数组返回最大值</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params">num1, num2, num3</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(num1, num2, num3);</span><br><span class="line">            <span class="keyword">var</span> max = arr[<span class="number">0</span>];</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[i] &gt; max) &#123;</span><br><span class="line">                    max = arr[i];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> max;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> num1 = prompt(<span class="string">&#x27;请输入第一个数:&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> num2 = prompt(<span class="string">&#x27;请输入第二个数:&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> num3 = prompt(<span class="string">&#x27;请输入第三个数:&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> result = myFunction(num1, num2, num3);</span><br><span class="line">        alert(<span class="string">&#x27;最大值为:&#x27;</span> + result);</span><br></pre></td></tr></table></figure>
+
+<h4 id="三元表达式求3个数最大值"><a href="#三元表达式求3个数最大值" class="headerlink" title="三元表达式求3个数最大值"></a>三元表达式求3个数最大值</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function getArrMax() &#123;</span><br><span class="line">           var num1 = parseInt(prompt(&#x27;请输出第一个数字:&#x27;));</span><br><span class="line">           var num2 = parseInt(prompt(&#x27;请输出第二个数字:&#x27;));</span><br><span class="line">           var num3 = parseInt(prompt(&#x27;请输出第三个数字:&#x27;));</span><br><span class="line">           return num1 &gt; num2 ? (num1 &gt; num3 ? num1 : num3) : (num2 &gt; num3 ? num2 : num3);</span><br><span class="line">       &#125;</span><br><span class="line">       alert(getArrMax());</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="翻转数组"><a href="#翻转数组" class="headerlink" title="翻转数组"></a>翻转数组</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">function myFunction(arr) &#123;</span><br><span class="line">           var newArray = [];</span><br><span class="line">           for (var i = arr.length - 1; i &gt;= 0; i--) &#123;</span><br><span class="line">               newArray[newArray.length] = arr[i];</span><br><span class="line">           &#125;</span><br><span class="line">           return newArray;</span><br><span class="line">       &#125;</span><br><span class="line">       var sort = myFunction([&#x27;teng&#x27;, &#x27;baba&#x27;, &#x27;yetu&#x27;, &#x27;xiong&#x27;]);</span><br><span class="line">       console.log(sort);</span><br></pre></td></tr></table></figure>
+
+<h4 id="while弹窗翻转"><a href="#while弹窗翻转" class="headerlink" title="while弹窗翻转"></a>while弹窗翻转</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> name = prompt(<span class="string">&#x27;请输入数字&#x27;</span>, <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">            <span class="keyword">var</span> nameArray = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">            <span class="keyword">while</span> (name != <span class="literal">null</span> &amp;&amp; name != <span class="string">&#x27;&#x27;</span> &amp;&amp; nameArray.length &lt; <span class="number">10</span>) &#123;</span><br><span class="line">                name = prompt(<span class="string">&#x27;请输入数字&#x27;</span>, <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">                nameArray.push(name);</span><br><span class="line">            &#125;</span><br><span class="line">            nameArray.sort(<span class="function"><span class="keyword">function</span> <span class="title">compareFunction</span>(<span class="params">param1, param2</span>) </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> param1 - param2;</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> i = nameArray.length - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">                alert(nameArray[i] + <span class="string">&#x27;\n&#x27;</span> + <span class="string">&#x27;&#x27;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        myFunction();</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="判断数组是否有素数"><a href="#判断数组是否有素数" class="headerlink" title="判断数组是否有素数"></a>判断数组是否有素数</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myFunction</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> x = <span class="built_in">parseInt</span>(prompt(<span class="string">&quot;请输入一个数:&quot;</span>));</span><br><span class="line">            <span class="keyword">var</span> isPrime = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">var</span> i = <span class="string">&#x27;&#x27;</span>;</span><br><span class="line">            <span class="keyword">for</span> (i = <span class="number">2</span>; i &lt; x; i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (x % i == <span class="number">0</span>) &#123;</span><br><span class="line">                    isPrime = <span class="number">0</span>;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (isPrime == <span class="number">1</span>) &#123;</span><br><span class="line">                alert(<span class="string">&#x27;是素数&#x27;</span>);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                alert(<span class="string">&#x27;不是素数&#x27;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        myFunction();</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="简易的计算机deemo"><a href="#简易的计算机deemo" class="headerlink" title="简易的计算机deemo"></a>简易的计算机deemo</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getRes</span>(<span class="params">num1, symbol, num2</span>) </span>&#123;</span><br><span class="line">            <span class="keyword">switch</span> (symbol) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:</span><br><span class="line">                    <span class="keyword">return</span> (<span class="built_in">parseInt</span>(num1) + <span class="built_in">parseInt</span>(num2));</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:</span><br><span class="line">                    <span class="keyword">return</span> (<span class="built_in">parseInt</span>(num1) - <span class="built_in">parseInt</span>(num2));</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>:</span><br><span class="line">                    <span class="keyword">return</span> (<span class="built_in">parseInt</span>(num1) * <span class="built_in">parseInt</span>(num2));</span><br><span class="line">                <span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>:</span><br><span class="line">                    <span class="keyword">return</span> (<span class="built_in">parseInt</span>(num1) / <span class="built_in">parseInt</span>(num2));</span><br><span class="line">                <span class="keyword">default</span>:</span><br><span class="line">                    <span class="keyword">return</span> (<span class="string">&#x27;运算符输入错误&#x27;</span>)</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> num1 = prompt(<span class="string">&#x27;请输入一个数&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> symbol = prompt(<span class="string">&#x27;请输入运算符&#x27;</span>);</span><br><span class="line">        <span class="keyword">var</span> num2 = prompt(<span class="string">&#x27;请输入一个数&#x27;</span>);</span><br><span class="line">        alert(<span class="string">&#x27;结果为：&#x27;</span> + getRes(num1, symbol, num2));</span><br></pre></td></tr></table></figure>
+
+
                 
             </div>
             <hr/>
@@ -495,7 +519,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/Parade001/Parade001.github.io/Parade001.github.io/2021/10/18/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E5%85%AD%E5%A4%A9%EF%BC%89/">https://github.com/Parade001/Parade001.github.io/Parade001.github.io/2021/10/18/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E5%85%AD%E5%A4%A9%EF%BC%89/</a>
+                    <a href="https://github.com/Parade001/Parade001.github.io/Parade001.github.io/2021/10/14/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%A4%A9%EF%BC%89/">https://github.com/Parade001/Parade001.github.io/Parade001.github.io/2021/10/14/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%A4%A9%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -706,7 +730,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/Parade001.github.io/2021/10/19/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%94%E5%A4%A9/">
+                <a href="/Parade001.github.io/2021/10/15/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%94%E5%A4%A9/">
                     <div class="card-image">
                         
                         
@@ -723,7 +747,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-15
                         </span>
                         <span class="publish-author">
                             
@@ -743,13 +767,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Parade001.github.io/2021/10/18/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E5%9B%9B%E5%A4%A9%EF%BC%89/">
+                <a href="/Parade001.github.io/2021/10/13/JavaScript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%89%E5%A4%A9/">
                     <div class="card-image">
                         
                         
-                        <img src="/Parade001.github.io/medias/featureimages/20.jpg" class="responsive-img" alt="JavaScript学习笔记（第四天）">
+                        <img src="/Parade001.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="JavaScript学习笔记(第三天)">
                         
-                        <span class="card-title">JavaScript学习笔记（第四天）</span>
+                        <span class="card-title">JavaScript学习笔记(第三天)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -760,7 +784,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-13
                             </span>
                         <span class="publish-author">
                             
@@ -970,7 +994,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">18.1k</span>
+                        class="white-color">19.6k</span>
             
             
             
