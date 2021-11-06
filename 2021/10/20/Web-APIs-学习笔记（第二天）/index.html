@@ -5,7 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Web-APIs-学习笔记（第二天）, null">
-    <meta name="description" content="Web-APIs-学习笔记（第二天） | null">
+    <meta name="description" content="JavaScript排他思想如果有同一组元素，我们想要某一个元素实现某种样式，需要用到循环的排他思想算法：
+
+所有元素全部清除样式（干掉其他人）
+给当前元素设置样式（留下我自己）
+注意顺序不能颠倒，首先干掉其他人，再设置自己
+
+demo1多">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,19 +24,19 @@
 
 
     <title>Web-APIs-学习笔记（第二天） | null</title>
-    <link rel="icon" type="image/png" href="/Parade001.github.io/favicon.png">
+    <link rel="icon" type="image/png" href="/Parade001/Parade001.github.io.git/favicon.png">
 
-    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/css/my.css">
 
-    <script src="/Parade001.github.io/libs/jquery/jquery.min.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/Parade001.github.io/atom.xml" title="null" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/Parade001/Parade001.github.io.git/atom.xml" title="null" type="application/atom+xml">
 </head>
 
 
@@ -41,9 +47,9 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="/Parade001.github.io/" class="waves-effect waves-light">
+                <a href="/Parade001/Parade001.github.io.git/" class="waves-effect waves-light">
                     
-                    <img src="/Parade001.github.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/Parade001/Parade001.github.io.git/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span"></span>
                 </a>
@@ -55,7 +61,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Parade001.github.io/" class="waves-effect waves-light">
+    <a href="/Parade001/Parade001.github.io.git/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
@@ -66,7 +72,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Parade001.github.io/tags" class="waves-effect waves-light">
+    <a href="/Parade001/Parade001.github.io.git/tags" class="waves-effect waves-light">
       
       <i class="fas fa-tags" style="zoom: 0.6;"></i>
       
@@ -77,7 +83,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Parade001.github.io/categories" class="waves-effect waves-light">
+    <a href="/Parade001/Parade001.github.io.git/categories" class="waves-effect waves-light">
       
       <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
       
@@ -88,7 +94,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Parade001.github.io/archives" class="waves-effect waves-light">
+    <a href="/Parade001/Parade001.github.io.git/archives" class="waves-effect waves-light">
       
       <i class="fas fa-archive" style="zoom: 0.6;"></i>
       
@@ -99,7 +105,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Parade001.github.io/about" class="waves-effect waves-light">
+    <a href="/Parade001/Parade001.github.io.git/about" class="waves-effect waves-light">
       
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
@@ -110,7 +116,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Parade001.github.io/contact" class="waves-effect waves-light">
+    <a href="/Parade001/Parade001.github.io.git/contact" class="waves-effect waves-light">
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
@@ -121,7 +127,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/Parade001.github.io/friends" class="waves-effect waves-light">
+    <a href="/Parade001/Parade001.github.io.git/friends" class="waves-effect waves-light">
       
       <i class="fas fa-address-book" style="zoom: 0.6;"></i>
       
@@ -142,7 +148,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/Parade001.github.io/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/Parade001/Parade001.github.io.git/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name"></div>
         <div class="logo-desc">
@@ -156,7 +162,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/Parade001.github.io/" class="waves-effect waves-light">
+		<a href="/Parade001/Parade001.github.io.git/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
@@ -167,7 +173,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/Parade001.github.io/tags" class="waves-effect waves-light">
+		<a href="/Parade001/Parade001.github.io.git/tags" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-tags"></i>
 			
@@ -178,7 +184,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/Parade001.github.io/categories" class="waves-effect waves-light">
+		<a href="/Parade001/Parade001.github.io.git/categories" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-bookmark"></i>
 			
@@ -189,7 +195,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/Parade001.github.io/archives" class="waves-effect waves-light">
+		<a href="/Parade001/Parade001.github.io.git/archives" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-archive"></i>
 			
@@ -200,7 +206,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/Parade001.github.io/about" class="waves-effect waves-light">
+		<a href="/Parade001/Parade001.github.io.git/about" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
@@ -211,7 +217,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/Parade001.github.io/contact" class="waves-effect waves-light">
+		<a href="/Parade001/Parade001.github.io.git/contact" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-comments"></i>
 			
@@ -222,7 +228,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/Parade001.github.io/friends" class="waves-effect waves-light">
+		<a href="/Parade001/Parade001.github.io.git/friends" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-address-book"></i>
 			
@@ -310,7 +316,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/Parade001.github.io/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Parade001/Parade001.github.io.git/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -328,7 +334,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="/Parade001.github.io/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/Parade001/Parade001.github.io.git/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -452,7 +458,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    0
+                    2.4k
                 </div>
                 
 
@@ -469,7 +475,39 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="JavaScript排他思想"><a href="#JavaScript排他思想" class="headerlink" title="JavaScript排他思想"></a>JavaScript排他思想</h2><p>如果有同一组元素，我们想要某一个元素实现某种样式，需要用到循环的排他思想算法：</p>
+<ol>
+<li>所有元素全部清除样式（干掉其他人）</li>
+<li>给当前元素设置样式（留下我自己）</li>
+<li>注意顺序不能颠倒，首先干掉其他人，再设置自己</li>
+</ol>
+<h2 id="demo1多个按钮"><a href="#demo1多个按钮" class="headerlink" title="demo1多个按钮"></a>demo1多个按钮</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;button&gt;BTN1&lt;/button&gt;</span><br><span class="line">   <span class="xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>BTN2<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">   <span class="xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>BTN3<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">   <span class="xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>BTN4<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">   <span class="xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>BTN5<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">   <span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">       <span class="keyword">var</span> btns = <span class="built_in">document</span>.querySelectorAll(<span class="string">&quot;button&quot;</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">       <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; btns.length; i++) &#123; <span class="comment">//此处是为了绑定事件</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">           btns[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">               <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; btns.length; i++) &#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                   btns[i].style.backgroundColor = <span class="string">&quot;&quot;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">               &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">               <span class="built_in">this</span>.style.backgroundColor = <span class="string">&quot;cyan&quot;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">           &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">       &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">   </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>首先去获取的一个伪数组</p>
+</li>
+<li><p>利用双重for循环</p>
+</li>
+<li><p>首先先排除其他人，然后才设置自己的样式，这种排除其他人的思想我们称为排他思想</p>
+</li>
+</ol>
+<h2 id="demo2全选反选"><a href="#demo2全选反选" class="headerlink" title="demo2全选反选"></a>demo2全选反选</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line">  &lt;style&gt;</span><br><span class="line">        * &#123;</span><br><span class="line">            padding: 0;</span><br><span class="line">            margin: 0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .wrap &#123;</span><br><span class="line">            width: 300px;</span><br><span class="line">            margin: 100px auto 0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        table &#123;</span><br><span class="line">            border-collapse: collapse;</span><br><span class="line">            border-spacing: 0;</span><br><span class="line">            border: 1px solid #c0c0c0;</span><br><span class="line">            width: 300px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        th,</span><br><span class="line">        td &#123;</span><br><span class="line">            border: 1px solid #d0d0d0;</span><br><span class="line">            color: #404060;</span><br><span class="line">            padding: 10px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        th &#123;</span><br><span class="line">            background-color: #09c;</span><br><span class="line">            font: bold 16px &quot;微软雅黑&quot;;</span><br><span class="line">            color: #fff;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        td &#123;</span><br><span class="line">            font: 14px &quot;微软雅黑&quot;;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        tbody tr &#123;</span><br><span class="line">            background-color: #f0f0f0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        tbody tr:hover &#123;</span><br><span class="line">            cursor: pointer;</span><br><span class="line">            background-color: #fafafa;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;table&gt;</span><br><span class="line">            &lt;thead&gt;</span><br><span class="line">                &lt;tr&gt;</span><br><span class="line">                    &lt;th&gt;</span><br><span class="line">                        &lt;input type=&quot;checkbox&quot; id=&quot;j_cbAll&quot; /&gt;</span><br><span class="line">                    &lt;/th&gt;</span><br><span class="line">                    &lt;th&gt;商品&lt;/th&gt;</span><br><span class="line">                    &lt;th&gt;价钱&lt;/th&gt;</span><br><span class="line">                &lt;/tr&gt;</span><br><span class="line">            &lt;/thead&gt;</span><br><span class="line">            &lt;tbody id=&quot;j_tb&quot;&gt;</span><br><span class="line">                &lt;tr&gt;</span><br><span class="line">                    &lt;td&gt;</span><br><span class="line">                        &lt;input type=&quot;checkbox&quot; /&gt;</span><br><span class="line">                    &lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;iPhone8&lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;8000&lt;/td&gt;</span><br><span class="line">                &lt;/tr&gt;</span><br><span class="line">                &lt;tr&gt;</span><br><span class="line">                    &lt;td&gt;</span><br><span class="line">                        &lt;input type=&quot;checkbox&quot; /&gt;</span><br><span class="line">                    &lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;iPad Pro&lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;5000&lt;/td&gt;</span><br><span class="line">                &lt;/tr&gt;</span><br><span class="line">                &lt;tr&gt;</span><br><span class="line">                    &lt;td&gt;</span><br><span class="line">                        &lt;input type=&quot;checkbox&quot; /&gt;</span><br><span class="line">                    &lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;iPad Air&lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;2000&lt;/td&gt;</span><br><span class="line">                &lt;/tr&gt;</span><br><span class="line">                &lt;tr&gt;</span><br><span class="line">                    &lt;td&gt;</span><br><span class="line">                        &lt;input type=&quot;checkbox&quot; /&gt;</span><br><span class="line">                    &lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;Apple Watch&lt;/td&gt;</span><br><span class="line">                    &lt;td&gt;2000&lt;/td&gt;</span><br><span class="line">                &lt;/tr&gt;</span><br><span class="line"></span><br><span class="line">            &lt;/tbody&gt;</span><br><span class="line">        &lt;/table&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        var cbAll = document.querySelector(&quot;#j_cbAll&quot;);</span><br><span class="line">        var cbItems = document.querySelectorAll(&quot;#j_tb input&quot;);</span><br><span class="line">        cbAll.onclick = function () &#123;</span><br><span class="line">            for (var i = 0; i &lt; cbItems.length; i++) &#123;</span><br><span class="line">                cbItems[i].checked = this.checked;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">      </span><br><span class="line"></span><br><span class="line">        for (var i = 0; i &lt; cbItems.length; i++) &#123;</span><br><span class="line">            cbItems[i].onclick = function () &#123;</span><br><span class="line">                var flag = true;</span><br><span class="line">                for (var i = 0; i &lt; cbItems.length; i++) &#123;</span><br><span class="line">                    if (!cbItems[i].checked) &#123;</span><br><span class="line">                        flag = false;</span><br><span class="line">                        break;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                cbAll.checked = flag;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="demo3表格隔行变色"><a href="#demo3表格隔行变色" class="headerlink" title="demo3表格隔行变色"></a>demo3表格隔行变色</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">        table &#123;</span><br><span class="line">            <span class="attr">width</span>: 800px;</span><br><span class="line">            margin: 100px auto;</span><br><span class="line">            text-align: center;</span><br><span class="line">            border-collapse: collapse;</span><br><span class="line">            font-size: 14px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        thead tr &#123;</span><br><span class="line">            <span class="attr">height</span>: 30px;</span><br><span class="line">            background-color: skyblue;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        tbody tr &#123;</span><br><span class="line">            <span class="attr">height</span>: 30px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        tbody td &#123;</span><br><span class="line">            border-bottom: 1px solid #d7d7d7;</span><br><span class="line">            font-size: 12px;</span><br><span class="line">            color: blue;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .bg &#123;</span><br><span class="line">            background-color: pink;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">table</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>代码<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>名称<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>最新公布净值<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>累计净值<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>前单位净值<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">th</span>&gt;</span>净值增长率<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>003526<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>农银金穗3个月定期开放债券<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.075<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.079<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.074<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>+0.047%<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>003526<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>农银金穗3个月定期开放债券<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.075<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.079<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.074<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>+0.047%<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>003526<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>农银金穗3个月定期开放债券<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.075<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.079<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.074<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>+0.047%<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>003526<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>农银金穗3个月定期开放债券<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.075<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.079<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.074<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>+0.047%<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>003526<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>农银金穗3个月定期开放债券<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.075<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.079<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.074<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>+0.047%<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>003526<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>农银金穗3个月定期开放债券<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.075<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.079<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>1.074<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">td</span>&gt;</span>+0.047%<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">var</span> trs = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;tbody&#x27;</span>).querySelectorAll(<span class="string">&#x27;tr&#x27;</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; trs.length; i++) &#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            trs[i].onmouseover = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="built_in">this</span>.className = <span class="string">&#x27;bg&#x27;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            trs[i].onmouseout = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="built_in">this</span>.className = <span class="string">&#x27;&#x27;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">        &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="demo4打开一个视口"><a href="#demo4打开一个视口" class="headerlink" title="demo4打开一个视口"></a>demo4打开一个视口</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">&quot;javascript:popUP(&#x27;http://www.baidu.com/&#x27;);&quot;</span>&gt;baidu&lt;<span class="regexp">/a&gt;  /</span><span class="regexp">/Chrome会拦截弹窗,允许即可</span></span><br><span class="line"><span class="regexp">   &lt;script&gt;</span></span><br><span class="line"><span class="regexp">       function popUp(winURL) &#123;</span></span><br><span class="line"><span class="regexp">           window.open(winURL, &quot; popup&quot;, &quot;width=400,height=280&quot;);</span></span><br><span class="line"><span class="regexp">       &#125;</span></span><br><span class="line"><span class="regexp">       popUp(&#x27;http:/</span><span class="regexp">/www.baidu.com/</span><span class="string">&#x27;);</span></span><br><span class="line"><span class="string">   &lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="demo5循环精灵图"><a href="#demo5循环精灵图" class="headerlink" title="demo5循环精灵图"></a>demo5循环精灵图</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"> &lt;style&gt;</span><br><span class="line">        * &#123;</span><br><span class="line">            <span class="attr">margin</span>: <span class="number">0</span>;</span><br><span class="line">            padding: <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        li &#123;</span><br><span class="line">            list-style-type: none;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .box &#123;</span><br><span class="line">            <span class="attr">width</span>: 250px;</span><br><span class="line">            margin: 100px auto;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .box li &#123;</span><br><span class="line">            <span class="attr">float</span>: left;</span><br><span class="line">            width: 24px;</span><br><span class="line">            height: 24px;</span><br><span class="line">            background-color: pink;</span><br><span class="line">            margin: 15px;</span><br><span class="line">            background: url(../img/sprite.png) no-repeat;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;box&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">var</span> lis = <span class="built_in">document</span>.querySelectorAll(<span class="string">&quot;li&quot;</span>);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; lis.length; i++) &#123;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            <span class="keyword">var</span> index = i * <span class="number">44</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            lis[i].style.backgroundPosition = <span class="string">`0 -<span class="subst">$&#123;index&#125;</span>px`</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">        &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>demo6tab栏切换</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"> &lt;style&gt;</span><br><span class="line">        * &#123;</span><br><span class="line">            <span class="attr">margin</span>: <span class="number">0</span>;</span><br><span class="line">            padding: <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        li &#123;</span><br><span class="line">            list-style-type: none;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .tab &#123;</span><br><span class="line">            <span class="attr">width</span>: 978px;</span><br><span class="line">            margin: 100px auto;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .tab_list &#123;</span><br><span class="line">            <span class="attr">height</span>: 39px;</span><br><span class="line">            border: 1px solid #ccc;</span><br><span class="line">            background-color: #f1f1f1;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .tab_list li &#123;</span><br><span class="line">            <span class="attr">float</span>: left;</span><br><span class="line">            height: 39px;</span><br><span class="line">            line-height: 39px;</span><br><span class="line">            padding: <span class="number">0</span> 20px;</span><br><span class="line">            text-align: center;</span><br><span class="line">            cursor: pointer;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .tab_list .current &#123;</span><br><span class="line">            background-color: #c81623;</span><br><span class="line">            color: #fff;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .item_info &#123;</span><br><span class="line">            <span class="attr">padding</span>: 20px <span class="number">0</span> <span class="number">0</span> 20px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        .item &#123;</span><br><span class="line">            <span class="attr">display</span>: none;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tab&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tab_list&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;current&quot;</span>&gt;</span>商品介绍<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">li</span>&gt;</span>规格与包装<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">li</span>&gt;</span>售后保障<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">li</span>&gt;</span>商品评价（50000）<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">li</span>&gt;</span>手机社区<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tab_con&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span> <span class="attr">style</span>=<span class="string">&quot;display: block;&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                商品介绍模块内容</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                规格与包装模块内容</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                售后保障模块内容</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                商品评价（50000）模块内容</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;item&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">                手机社区模块内容</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">var</span> tab_list = <span class="built_in">document</span>.querySelector(<span class="string">&#x27;.tab_list&#x27;</span>); <span class="comment">//获取dom元素</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">var</span> lis = tab_list.querySelectorAll(<span class="string">&#x27;li&#x27;</span>); <span class="comment">//获取dom元素</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">var</span> items = <span class="built_in">document</span>.querySelectorAll(<span class="string">&#x27;.item&#x27;</span>); <span class="comment">//获取dom元素</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; lis.length; i++) &#123; <span class="comment">//给所有li 注册事件</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">            lis[i].setAttribute(<span class="string">&#x27;index&#x27;</span>, i); <span class="comment">//给遍历到的li 添加 index = i 的属性和属性值</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">            lis[i].onclick = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="comment">//绑定函数</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; lis.length; i++) &#123; <span class="comment">//第一遍循环</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">                    lis[i].className = <span class="string">&#x27;&#x27;</span>; <span class="comment">//给遍历到的li 赋空值;</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">                &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="built_in">this</span>.className = <span class="string">&#x27;current&#x27;</span>; <span class="comment">// 给遍历到的函数添加类名为&#x27;current&#x27;</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="keyword">var</span> index = <span class="built_in">this</span>.getAttribute(<span class="string">&#x27;index&#x27;</span>); <span class="comment">//获取 index这个dom元素</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="built_in">console</span>.log(index);</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; items.length; i++) &#123; <span class="comment">//给遍历到的Dom添加 事件</span></span></span></span><br><span class="line"><span class="javascript"><span class="xml">                    items[i].style.display = <span class="string">&#x27;none&#x27;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">                items[i].style.display = <span class="string">&#x27;block&#x27;</span>;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">            &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">        &#125;</span></span></span><br><span class="line"><span class="javascript"><span class="xml">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<p>demo表单提交</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"> &lt;style&gt;</span><br><span class="line">        <span class="comment">/* * &#123;</span></span><br><span class="line"><span class="comment">            margin: 0;</span></span><br><span class="line"><span class="comment">            padding: 0;</span></span><br><span class="line"><span class="comment">        &#125; */</span></span><br><span class="line"></span><br><span class="line">        div &#123;</span><br><span class="line">            <span class="attr">display</span>: flex;</span><br><span class="line">            align-items: center;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        input &#123;</span><br><span class="line">            margin-left: 10px;</span><br><span class="line">            width: 200px;</span><br><span class="line">            height: 20px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        table &#123;</span><br><span class="line">            <span class="attr">width</span>: 600px;</span><br><span class="line">            cursor: pointer;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        table td &#123;</span><br><span class="line">            text-align: center;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        table th &#123;</span><br><span class="line">            background-color: blueviolet;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        table tr &#123;</span><br><span class="line">            background-color: pink;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;p&gt;请输入姓名:&lt;/p&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; id=&quot;username&quot; value=&quot;&quot;&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;p&gt;请输入邮箱:&lt;/p&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; id=&quot;email&quot; value=&quot;&quot;&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;button&gt;添加&lt;/button&gt;</span><br><span class="line">    &lt;table&gt;</span><br><span class="line">        &lt;thead&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;th&gt;姓名&lt;/th&gt;</span><br><span class="line">                &lt;th&gt;邮箱&lt;/th&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">        &lt;/thead&gt;</span><br><span class="line">        &lt;tbody id=&quot;tb&quot;&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;小黑&lt;/td&gt;</span><br><span class="line">                &lt;td&gt;eocho@126.com&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">            &lt;tr&gt;</span><br><span class="line">                &lt;td&gt;小白&lt;/td&gt;</span><br><span class="line">                &lt;td&gt;echo@alibaba.com&lt;/td&gt;</span><br><span class="line">            &lt;/tr&gt;</span><br><span class="line">        &lt;/tbody&gt;</span><br><span class="line">    &lt;/table&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">         var username = document.querySelector(&quot;#username&quot;);</span><br><span class="line">         var btn = document.querySelector(&quot;button&quot;);</span><br><span class="line">         var email = document.querySelector(&quot;#email&quot;);</span><br><span class="line">        // btn.onclick = function () &#123;</span><br><span class="line">        //     if (username.value === &quot;&quot; || email.value === &quot;&quot;) &#123;</span><br><span class="line">        //         alert(&quot;不要提交空信息&quot;);</span><br><span class="line">        //         return;</span><br><span class="line">        //     &#125;</span><br><span class="line">        //     var tr = document.createElement(&quot;tr&quot;); // 声明创建一个tr</span><br><span class="line">        //     tb.appendChild(tr); // 在tb节点插入tr</span><br><span class="line">        //     var td = document.createElement(&quot;td&quot;);</span><br><span class="line">        //     td.innerHTML = username.value;</span><br><span class="line">        //     tr.appendChild(td);</span><br><span class="line">        //     var td2 = document.createElement(&quot;td&quot;); //声明:创建一个变量名为tb2的tb标签</span><br><span class="line">        //     td2.innerHTML = email.value; //把email.value值写入tb2</span><br><span class="line">        //     tr.appendChild(td2);</span><br><span class="line">        // &#125;</span><br><span class="line">        btn.onclick = function () &#123;</span><br><span class="line">            if (username.value.trim() === &quot;&quot; || email.value.trim() === &quot;&quot;) &#123;</span><br><span class="line">                alert(&quot;请输入正确的值&quot;);</span><br><span class="line">                return;</span><br><span class="line">            &#125;</span><br><span class="line">            var tr = document.createElement(&quot;tr&quot;);</span><br><span class="line">            tb.insertBefore(tr, tb.children[0]);</span><br><span class="line">            var td = document.createElement(&quot;td&quot;);</span><br><span class="line">            td.innerHTML = username.value;</span><br><span class="line">            tr.insertBefore(td, tr.children[0]);</span><br><span class="line">            var td2 = document.createElement(&quot;td&quot;);</span><br><span class="line">            td2.innerHTML = email.value;</span><br><span class="line">            tr.insertBefore(td2, tr.children[0]);</span><br><span class="line">            username.value = email.value = &quot;&quot;;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
                 
             </div>
             <hr/>
@@ -485,7 +523,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/Parade001.github.io/about" rel="external nofollow noreferrer">xt_xiong</a>
+                    <a href="/Parade001/Parade001.github.io.git/about" rel="external nofollow noreferrer">xt_xiong</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -495,7 +533,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/Parade001/Parade001.github.io.git/Parade001.github.io/2021/10/20/Web-APIs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%A4%A9%EF%BC%89/">https://github.com/Parade001/Parade001.github.io.git/Parade001.github.io/2021/10/20/Web-APIs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%A4%A9%EF%BC%89/</a>
+                    <a href="https://github.com/Parade001/Parade001.github.io.git/Parade001/Parade001.github.io.git/2021/10/20/Web-APIs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%A4%A9%EF%BC%89/">https://github.com/Parade001/Parade001.github.io.git/Parade001/Parade001.github.io.git/2021/10/20/Web-APIs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%A4%A9%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -508,7 +546,7 @@
                     All articles in this blog are used except for special statements
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     reprint policy. If reproduced, please indicate source
-                    <a href="/Parade001.github.io/about" target="_blank">xt_xiong</a>
+                    <a href="/Parade001/Parade001.github.io.git/about" target="_blank">xt_xiong</a>
                     !
                 </span>
             </div>
@@ -537,12 +575,12 @@
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/Parade001.github.io/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/Parade001/Parade001.github.io.git/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/Parade001.github.io/libs/share/js/social-share.min.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -660,10 +698,10 @@
                         <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
                     </ul>
                     <div id="alipay">
-                        <img src="/Parade001.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                        <img src="/Parade001/Parade001.github.io.git/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
                     </div>
                     <div id="wechat">
-                        <img src="/Parade001.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                        <img src="/Parade001/Parade001.github.io.git/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
                     </div>
                 </div>
             </div>
@@ -702,18 +740,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/Parade001.github.io/2021/10/20/Web-APIs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%BA%8C%E5%A4%A9%EF%BC%89/">
+                <a href="/Parade001/Parade001.github.io.git/2021/10/30/Web-API%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%89%E5%A4%A9/">
                     <div class="card-image">
                         
                         
-                        <img src="/Parade001.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="Web-APIs-学习笔记（第二天）">
+                        <img src="/Parade001/Parade001.github.io.git/medias/featureimages/18.jpg" class="responsive-img" alt="Web-API学习笔记(第三天)">
                         
-                        <span class="card-title">Web-APIs-学习笔记（第二天）</span>
+                        <span class="card-title">Web-API学习笔记(第三天)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -723,9 +760,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-30
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -734,7 +771,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -745,11 +781,11 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/Parade001.github.io/2021/10/20/Web-APIs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E5%A4%A9%EF%BC%89/">
+                <a href="/Parade001/Parade001.github.io.git/2021/10/20/Web-APIs-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E7%AC%AC%E4%B8%80%E5%A4%A9%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/Parade001.github.io/medias/featureimages/3.jpg" class="responsive-img" alt="Web APIs 学习笔记（第一天）">
+                        <img src="/Parade001/Parade001.github.io.git/medias/featureimages/3.jpg" class="responsive-img" alt="Web APIs 学习笔记（第一天）">
                         
                         <span class="card-title">Web APIs 学习笔记（第一天）</span>
                     </div>
@@ -784,21 +820,21 @@
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/Parade001.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/Parade001/Parade001.github.io.git/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/Parade001.github.io/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/Parade001/Parade001.github.io.git/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="/Parade001.github.io/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/Parade001/Parade001.github.io.git/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="/Parade001.github.io/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/Parade001/Parade001.github.io.git/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -819,7 +855,7 @@
 </div>
 
 
-<script src="/Parade001.github.io/libs/tocbot/tocbot.min.js"></script>
+<script src="/Parade001/Parade001.github.io.git/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -904,7 +940,7 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/Parade001.github.io/libs/aplayer/APlayer.min.css">
+        <link rel="stylesheet" href="/Parade001/Parade001.github.io.git/libs/aplayer/APlayer.min.css">
 <style>
     .aplayer .aplayer-lrc p {
         
@@ -954,7 +990,7 @@
     </div>
 </div>
 
-<script src="/Parade001.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="/Parade001/Parade001.github.io.git/libs/aplayer/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
@@ -966,13 +1002,13 @@
             
                 <span id="year">2019-2021</span>
             
-            <a href="/Parade001.github.io/about" target="_blank">xt_xiong</a>
+            <a href="/Parade001/Parade001.github.io.git/about" target="_blank">xt_xiong</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total Words:&nbsp;<span
-                        class="white-color">20.1k</span>
+                        class="white-color">32.1k</span>
             
             
             
@@ -1024,7 +1060,7 @@
 
 
 
-    <a href="/Parade001.github.io/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <a href="/Parade001/Parade001.github.io.git/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
         <i class="fas fa-rss"></i>
     </a>
 
@@ -1135,7 +1171,7 @@ $(function () {
         });
     };
 
-    searchFunc('/Parade001.github.io/search.xml', 'searchInput', 'searchResult');
+    searchFunc('/Parade001/Parade001.github.io.git/search.xml', 'searchInput', 'searchResult');
 });
 </script>
 
@@ -1147,12 +1183,12 @@ $(function () {
 </div>
 
 
-    <script src="/Parade001.github.io/libs/materialize/materialize.min.js"></script>
-    <script src="/Parade001.github.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/Parade001.github.io/libs/aos/aos.js"></script>
-    <script src="/Parade001.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/Parade001.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/Parade001.github.io/js/matery.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/materialize/materialize.min.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/aos/aos.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/Parade001/Parade001.github.io.git/js/matery.js"></script>
 
     
 
@@ -1175,10 +1211,10 @@ $(function () {
 </script>
 
     
-    <script src="/Parade001.github.io/libs/others/clicklove.js" async="async"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/Parade001.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/Parade001/Parade001.github.io.git/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1194,7 +1230,7 @@ $(function () {
     
 
     
-    <script src="/Parade001.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/Parade001/Parade001.github.io.git/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>
